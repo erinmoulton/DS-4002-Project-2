@@ -13,3 +13,9 @@ Software used: Google Colab
 Add-on Packages needed: pandas, matplotlib.pyplot, seaborn, numpy, spotipy, sklearn
 
 Platforms: Windows, Mac
+
+# Section 2: Project Folder Contents
+Our project folder is composed of a Data folder an Output folder a Scripts folder a License and this README.md.
+
+The Data folder contains a file showing where to find the dataset used for this project. There is also a data appendix showing statistics for all of the variables in the dataframe that we used to complete this project.
+
