@@ -1,4 +1,4 @@
-# The influence of song length on position in the Billboard Top 100
+# The Influence of Song Length on Position in the Billboard Top 100
 Billboard Top 100 songs of the week timeseries analysis
 
 Group Members: Erin Moulton, Hank Dickerson, Varun Pavuloori
