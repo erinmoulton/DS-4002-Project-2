@@ -68,3 +68,74 @@ Set variable names equal to your API key, API secret, Username, and Password.
 
 Set a variable named network equal to pylast.LastFMNetwork with your credentials as the inputs for pylast.LastFMNetwork
 
+Define a function get_song_length that takes in two paramaters (artist, song_title)
+
+Use a try/except block within the function
+
+With the try portion, use the search method in the spotify object (sp) and have it take in the artist and the song title as inputs.
+
+Have the function return the length of the song in milliseconds.
+
+With the except portion, have the function return a string that reads "error retrieving song length."
+
+Create a unique dataframe by grouping the original data frame by song and performer.
+
+Use the agregate function (.agg) to find the maximum instance, minimum chart_date (earliest), and maximum time_on_chart for each unique song
+
+Then reset the index of the resulting dataframe to clean it up.
+
+Initialize a new column in the unique dataframe as a placeholder for the song lengths in milliseconds.
+
+Create a for loop that will iterate over each row in the unique dataframe.
+
+Extract the song title and the artist name.
+
+Call the previously made get_song_length function to get each song length in milliseconds
+
+Update the new column we made to have each unique songs lenght.
+
+Test for null values in the song length column.
+
+Create a variable null_song_lengths that is equal to each song with a null value for the song length within the unique dataframe.
+
+Define a function with one parameter of artist_string.
+
+This function will further clean the performers of the song to not include featured or secondary artists.
+
+If any of the following are present in the artist_string (X, x, With, Featuring, Feauring, :, feat., or Feat.) replace them and anything that follows them with a blank space.
+
+Apply this function to the unique dataframe.
+
+Create and run the same for loop mentioned above on this dataframe.
+
+Define a function get_song_length_lastfm with two parameters (artist, song_title).
+
+Use a try/except block for this function.
+
+In the try portion, call the get_track method from the network object (an instance of the LastFM API client) 
+
+Use the get_duration method on the dataframe to get the duration of all the songs in milliseconds.
+
+If a duration is found return it, if not return NONE.
+
+For the except portion, if any error occurs print ("error retrieving song lenght") and return none.
+
+Create a for loop that iterates over each row of the null_song_lengths variable
+
+Extract the artist and the song title from the current row
+
+If the Value for the song length is still None in the unique dataframe, apply the get_song_length_lastfm function to the dataframe.
+
+Append these song lengths to the unique dataframe.
+
+Check for null values in the song_length variable.
+
+Use null_song_lenghts.head(36) to find out which songs are still null.
+
+Create a dictionary and manually input all 36 of these songs lengths in milliseconds.
+
+Update the unique dataframe to include the values from the dictionary you just made.
+
+Using the song_length column create a new column in the unique dataframe that converts the song length in miliseconds to minutes.
+
+Save this unique dataframe as a CSV to insure the data is secure.
