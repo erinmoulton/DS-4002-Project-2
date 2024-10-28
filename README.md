@@ -10,7 +10,7 @@ Dataset sourced from: https://github.com/HipsterVizNinja/random-data
 # Section 1: Software and Platform section
 Software used: Google Colab
 
-Add-on Packages needed: pandas, matplotlib.pyplot, seaborn, numpy, spotipy, sklearn
+Add-on Packages needed: pandas, matplotlib.pyplot, seaborn, numpy, spotipy, sklearn <br>
 API's used: Spotify Web API, Last.fm Music Discovery API
 
 Platforms: Windows, Mac
