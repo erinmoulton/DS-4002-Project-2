@@ -138,4 +138,4 @@ Update the unique dataframe to include the values from the dictionary you just m
 
 Using the song_length column create a new column in the unique dataframe that converts the song length in miliseconds to minutes.
 
-Save this unique dataframe as a CSV to insure the data is secure.
+Save this unique dataframe as a CSV to ensure the data is secure.
