@@ -167,31 +167,38 @@ Create a column rolling_std_7 which contains the standard deviation of time_on_c
 
 Remove any rows with null values for these columns.
 
-Analysis using ARIMA.
+Analysis using prophet.
 
-Install pmdarima.
+Install prophet.
 
-From statsmodels.tsa.stattools import adfuller.
+Convert the chart_date column in the unique dataframe to a datetime format.
 
-From statsmodels.tsa.arima.model import ARIMA.
+Create a new dataframe prophet_df that includes only the chart_date and song_length_mins column from the unique dataframe.
 
-From pmdarima import auto_arima.
+Rename the column chart_date to ds and song_length_mins to y.
 
-From sklearn.metrics import mean_squared_error.
+Ensure that ds is in datetime format.
 
-Set time_series equal to the time_on_chart column from the unique dataframe.
+From prophet import Prophet.
 
-Perform an augmented Dickey-Fuller test on time_series to check if the time series is stationary.
+Initialize a prophet model that expects a changpoint on January first 2016, with a change_point_prior_scale of 0.0001.
 
-Find the ADF statistic and the p-value in this test.
+Fit the model to prophet_df.
 
-Check to make sure the p-value is less than or equal to .05 which indicates the timeseries is stationary.
+Create a dataframe to hold predictions for the next 120 months with a frequency of every month.
 
-If the timeseries is in need of differencing create a new series time_series_diff by using the diff method on time_series.
+Predict future values using the dataframe just created with model.predict.
 
-Drop any NaN values in this new series.
+Use the plot method to visualize the forecast with the x-axis being date and the y-axis being song length.
 
-Perform the same augmented Dickey-Fuller test on the new series.
+Display the forecasted values (ds, yhat, yhat_lower, yhat_upper).
 
-Create a variable time_series_to_use that will select the differenced time series if the original p-value was greater than .05 and the original timeseries if the original p-value was less than or equal to .05.
+Initialize and fit a new prophet model on prophet_df.
 
+Create a dataframe to hold predictions for the next 60 months with a frequency of every month.
+
+Predict future values using the dataframe just created with model.predict.
+
+Use the plot method to visualize the forecast with the x-axis being date and the y-axis being song length.
+
+Display the forecasted values (ds, yhat, yhat_lower, yhat_upper).
