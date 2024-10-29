@@ -216,7 +216,11 @@ print the t-statistic and the p-value.
 # References
 
 [1] Facebook. (2019). Prophet. Prophet. https://facebook.github.io/prophet/
+
 [2] HipsterVizNinja. (2021). GitHub - HipsterVizNinja/random-data: Just a place to put all my random data sources. GitHub. https://github.com/HipsterVizNinja/random-data
+
 [3] Wilson, S. (2017, March 31). Streaming overtakes downloads and physical sales for first time ever in bumper year for music industry. Fact Magazine. https://www.factmag.com/2017/03/31/streaming-overtakes-downloads-physical-sales-2016/
+
 [4] “API Docs. (n.d.). Last.fm. https://www.last.fm/api
+
 [5] Spotify. (n.d.). Web API | Spotify for Developers. Developer.spotify.com. https://developer.spotify.com/documentation/web-api
