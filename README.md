@@ -20,6 +20,10 @@ Our project folder is composed of a Data folder an Output folder a Scripts folde
 
 The Data folder contains a file showing where to find the dataset used for this project. There is also a data appendix showing statistics for all of the variables in the dataframe that we used to complete this project.
 
+The Scripts folder includes a file of our source code used to obtain all of the results we observed throughout this project.
+
+The License file is a simple copyright license.
+
 # Section 3: Instructions to replicate results
 In order to reproduce the results we have found, first click the link at the top of this document.
 
