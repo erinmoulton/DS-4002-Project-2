@@ -202,3 +202,21 @@ Predict future values using the dataframe just created with model.predict.
 Use the plot method to visualize the forecast with the x-axis being date and the y-axis being song length.
 
 Display the forecasted values (ds, yhat, yhat_lower, yhat_upper).
+
+From scipy import stats.
+
+Create a series titled before_2016 which contains all song lengths from before January first 2016.
+
+Create a series titled after_2016 which contains all song lengths on or after January first 2016.
+
+Conduct an independent two sample t-test with the the two seriest just created.
+
+print the t-statistic and the p-value.
+
+# References
+
+[1] Facebook. (2019). Prophet. Prophet. https://facebook.github.io/prophet/
+[2] HipsterVizNinja. (2021). GitHub - HipsterVizNinja/random-data: Just a place to put all my random data sources. GitHub. https://github.com/HipsterVizNinja/random-data
+[3] Wilson, S. (2017, March 31). Streaming overtakes downloads and physical sales for first time ever in bumper year for music industry. Fact Magazine. https://www.factmag.com/2017/03/31/streaming-overtakes-downloads-physical-sales-2016/
+[4] “API Docs. (n.d.). Last.fm. https://www.last.fm/api
+[5] Spotify. (n.d.). Web API | Spotify for Developers. Developer.spotify.com. https://developer.spotify.com/documentation/web-api
