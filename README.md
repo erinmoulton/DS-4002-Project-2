@@ -33,7 +33,7 @@ Check for null values in the dataset.
 
 Drop uneeded columns (chart_position, song_id, consecutive_weeks, previous_week, peak_position, worst_position, chart_debut, chart_url).
 
-Exclude all songs with a chart_date prior to the year 2015.
+Exclude all songs with a chart_date prior to the year 2005.
 
 Define a function with artists_string as the sole input.
 
@@ -140,4 +140,58 @@ Update the unique dataframe to include the values from the dictionary you just m
 Using the song_length column create a new column in the unique dataframe that converts the song length in miliseconds to minutes.
 
 Save this unique dataframe as a CSV to ensure the data is secure.
+
+From sklearn.preprocessing import LabelEncoder, StandardScaler.
+
+From sklearn.model_selection import train_test_split.
+
+From sklearn.metrics import mean_squared_error, r2_score.
+
+Using pandas convert the chart_date column from the unique datafram from a string into a datetime object.
+
+Create three new columns (chart_year, chart_month, chart_day) by extracting the year, month, and day from the chart_date object.
+
+Use the LabelEncoder and the fit_transform methods to transform the song, performer, and instance columns from categorical to numerical format.
+
+Drop rows with any missing values.
+
+Create lag features by creating two new columns lag_1 and lag_7.
+
+lag_1 will contain the values of time_on_chart shifted by 1.
+
+lag_7 will contain the values of time_on_chart shifted by 7.
+
+Create a column rolling_mean_7 which contains the average value of time_on_chart over the last 7 entries.
+
+Create a column rolling_std_7 which contains the standard deviation of time_on_chart over the last 7 entries.
+
+Remove any rows with null values for these columns.
+
+Analysis using ARIMA.
+
+Install pmdarima.
+
+From statsmodels.tsa.stattools import adfuller.
+
+From statsmodels.tsa.arima.model import ARIMA.
+
+From pmdarima import auto_arima.
+
+From sklearn.metrics import mean_squared_error.
+
+Set time_series equal to the time_on_chart column from the unique dataframe.
+
+Perform an augmented Dickey-Fuller test on time_series to check if the time series is stationary.
+
+Find the ADF statistic and the p-value in this test.
+
+Check to make sure the p-value is less than or equal to .05 which indicates the timeseries is stationary.
+
+If the timeseries is in need of differencing create a new series time_series_diff by using the diff method on time_series.
+
+Drop any NaN values in this new series.
+
+Perform the same augmented Dickey-Fuller test on the new series.
+
+Create a variable time_series_to_use that will select the differenced time series if the original p-value was greater than .05 and the original timeseries if the original p-value was less than or equal to .05.
 
