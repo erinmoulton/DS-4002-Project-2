@@ -20,6 +20,8 @@ Our project folder is composed of a Data folder an Output folder a Scripts folde
 
 The Data folder contains a file showing where to find the dataset used for this project. There is also a data appendix showing statistics for all of the variables in the dataframe that we used to complete this project.
 
+The Output folder contains various graphs and images. There is a graph depicting the average length of songs on the top 100 across multiple years, a forecast graph that depicts the length of songs from our data and forecasts what the length of songs could be in future years. There is also a table showing outlier songs that are over six minutes long.
+
 The Scripts folder includes a file of our source code used to obtain all of the results we observed throughout this project.
 
 The License file is a simple copyright license.
