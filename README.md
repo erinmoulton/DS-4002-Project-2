@@ -228,3 +228,5 @@ print the t-statistic and the p-value.
 [4] “API Docs. (n.d.). Last.fm. https://www.last.fm/api
 
 [5] Spotify. (n.d.). Web API | Spotify for Developers. Developer.spotify.com. https://developer.spotify.com/documentation/web-api
+
+[6] A. Taylor, and R. J. McAdams, "Prophet: Forecasting at Scale," in Proceedings of the 2018 IEEE International Conference on Big Data (Big Data), 2018, pp. 2159-2166.
